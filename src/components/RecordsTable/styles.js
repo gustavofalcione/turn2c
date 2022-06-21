@@ -37,3 +37,14 @@ export const Content = styled.div`
     }
   }
 `
+// export const DIV = styled.div`
+//   color: #fff;
+//   font-size: 3rem;
+//   margin: 0 auto;
+//   display: flex;
+//   align-items: center;
+
+//   h1 {
+//     color: #fff;
+//   }
+// `

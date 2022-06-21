@@ -1,17 +1,14 @@
-// import { RequestButton } from "./components/RequestButton";
-// import { RecordsButton } from "./components/RecordsButton";
-// import { RecordsTable } from "./components/RecordsTable";
 import { GlobalStyle } from "./styles/global";
 import { MappedRoutes } from "./routes";
+import { CharactersContextProvider } from "./contexts/CharactersContext";
 
 export function App() {
   return (
     <>
-      {/* <RequestButton />
-      <RecordsButton />
-      <RecordsTable /> */}
-      <MappedRoutes />
-      <GlobalStyle />
+      <CharactersContextProvider>
+        <MappedRoutes />
+        <GlobalStyle />
+      </CharactersContextProvider>
     </>
   );
 }

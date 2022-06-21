@@ -1,14 +1,16 @@
 import { RequestButton } from "../../components/RequestButton";
 import { RecordsButton } from "../../components/RecordsButton";
-import { RecordsLink } from "./styles";
+import { Linked } from "./styles";
 
 export const Home = () => {
   return (
     <>
-      <RequestButton />
-      <RecordsLink to="/registros">
+      <Linked to="/registros">
+        <RequestButton />
+      </Linked>
+      <Linked to="/registros">
         <RecordsButton />
-      </RecordsLink>
+      </Linked>
     </>
   )
 }

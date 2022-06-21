@@ -1,16 +1,10 @@
-import { useEffect, useState } from "react"
+import { useContext } from "react"
+import { CharactersContext } from "../../contexts/CharactersContext";
 import { Container, Content } from "./styles"
 
 export function RecordsTable() {
-
-  const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    fetch('https://rickandmortyapi.com/api/character/')
-      .then(response => response.json())
-      .then(data => setCharacters(data.results))
-      // .then(data => console.log(data.results))
-  }, []);
+  const { characters } = useContext(CharactersContext);
+  console.log(characters)
 
   return(
     <Container>
@@ -27,7 +21,7 @@ export function RecordsTable() {
           <tbody>
             {characters.map(character => {
               return (
-                <tr>
+                <tr key={character.id}>
                   <td>{character.id}</td>
                   <td>{character.name}</td>
                   <td>{character.species}</td>
