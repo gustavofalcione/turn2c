@@ -1,7 +1,7 @@
 import { RecordsTable } from "../../components/RecordsTable"
 import { useContext } from "react";
 import { CharactersContext } from "../../contexts/CharactersContext";
-import { Container, Content } from "./styles";
+import { Container, Content, Button, Linked } from "./styles";
 
 export const Records = () => {
   const { characters, isCharacterRenderized } = useContext(CharactersContext);
@@ -15,7 +15,10 @@ export const Records = () => {
     return (
       <Container>
         <Content>
-          <h1>Algum problema ocorreu, você deve realizar a requisição primeiro</h1>
+          <h1>Algum problema ocorreu, você deve realizar a requisição para obter a relação de personagens</h1>
+          <Linked to="/">
+            <Button>Voltar para home</Button>
+          </Linked>
         </Content>
       </Container>
     )

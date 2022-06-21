@@ -21,10 +21,11 @@ export function RequestButton() {
     <Container>
       <Content>
         <Button 
+          type="submit"
           onClick={handleApiRequest}
           disabled={isButtonDisabled}
         >
-          <span>Chamar Requisição</span>
+          Chamar Requisição
         </Button>
       </Content>
     </Container>

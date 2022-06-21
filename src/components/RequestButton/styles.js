@@ -18,12 +18,9 @@ export const Button = styled.button`
   background: var(--buttonRequest);
   border: none;
   transition: filter .2s;
-
-  span { 
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #fff;
-  }
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
 
   &:hover {
     filter: brightness(.8);

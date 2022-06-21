@@ -5,7 +5,7 @@ export const Container = styled.div`
 `
 export const Content = styled.div`
   margin: 2rem auto;
-  max-width: 1120px;
+  max-width: 800px;
   display: flex;
   justify-content: center;
 
@@ -26,25 +26,14 @@ export const Content = styled.div`
       padding: 1rem 2rem;
       background: transparent;
       border: 1px solid #fff;
-      color: var(--shape-light);
       border-radius: 0.25rem;
       color: #c0c0c0;
 
       &:first-child {
         color:#DCDCDC;
         font-weight: 600;
+        text-align: center;
       } 
     }
   }
 `
-// export const DIV = styled.div`
-//   color: #fff;
-//   font-size: 3rem;
-//   margin: 0 auto;
-//   display: flex;
-//   align-items: center;
-
-//   h1 {
-//     color: #fff;
-//   }
-// `
