@@ -1,14 +1,16 @@
-import { RequestButton } from "./components/RequestButton";
-import { RecordsButton } from "./components/RecordsButton";
+// import { RequestButton } from "./components/RequestButton";
+// import { RecordsButton } from "./components/RecordsButton";
+// import { RecordsTable } from "./components/RecordsTable";
 import { GlobalStyle } from "./styles/global";
-import { RecordsTable } from "./components/RecordsTable";
+import { MappedRoutes } from "./routes";
 
 export function App() {
   return (
     <>
-      <RequestButton />
+      {/* <RequestButton />
       <RecordsButton />
-      <RecordsTable />
+      <RecordsTable /> */}
+      <MappedRoutes />
       <GlobalStyle />
     </>
   );
